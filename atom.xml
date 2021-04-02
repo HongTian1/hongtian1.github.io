@@ -1,20 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>TH</title>
   
   
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-04-02T04:57:53.355Z</updated>
+  <updated>2021-04-02T07:38:37.882Z</updated>
   <id>http://example.com/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>TH</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>01 创建博客和遇到Bug</title>
+    <link href="http://example.com/2021/04/02/hello-world0/"/>
+    <id>http://example.com/2021/04/02/hello-world0/</id>
+    <published>2021-04-02T09:22:09.256Z</published>
+    <updated>2021-04-02T07:38:37.882Z</updated>
+    
+    <content type="html"><![CDATA[<p>参考知乎<br>链接(<a href="https://www.zhihu.com/question/22197688">https://www.zhihu.com/question/22197688</a>)</p><h2 id="遇到小问题"><a href="#遇到小问题" class="headerlink" title="遇到小问题"></a>遇到小问题</h2><h3 id="hexo-d后-出现错误ERROR-Deployer-not-found-git"><a href="#hexo-d后-出现错误ERROR-Deployer-not-found-git" class="headerlink" title="hexo d后 出现错误ERROR Deployer not found: git"></a>hexo d后 出现错误ERROR Deployer not found: git</h3><p>输出下面代码即可</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure><h3 id="写-config-yml时注意"><a href="#写-config-yml时注意" class="headerlink" title="写_config.yml时注意"></a>写_config.yml时注意</h3><p>冒号: 后一定要带空格</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy: </span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: https://github.com/HongTian1/hongtian1.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure><h3 id="下载主题碰到的问题"><a href="#下载主题碰到的问题" class="headerlink" title="下载主题碰到的问题"></a><a href="https://hexo.io/themes/index.html">下载主题</a>碰到的问题</h3><p>下载主题后<br>出现错误 Hexo启动页面显示extends includes/layout.pug block content include includes/recent-posts.pug include</p><p>解决方案<br>按顺序执行命令</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ npm install --save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive</span><br><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;参考知乎&lt;br&gt;链接(&lt;a href=&quot;https://www.zhihu.com/question/22197688&quot;&gt;https://www.zhihu.com/question/22197688&lt;/a&gt;)&lt;/p&gt;
+&lt;h2 id=&quot;遇到小问题&quot;&gt;&lt;a href=&quot;#遇到</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>田红</title>
@@ -29,27 +50,6 @@
       
       
     <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>01 创建博客和遇到Bug</title>
-    <link href="http://example.com/2021/04/02/hello-world/"/>
-    <id>http://example.com/2021/04/02/hello-world/</id>
-    <published>2021-04-02T04:41:21.854Z</published>
-    <updated>2021-04-02T07:38:37.882Z</updated>
-    
-    <content type="html"><![CDATA[<p>参考知乎<br>链接(<a href="https://www.zhihu.com/question/22197688">https://www.zhihu.com/question/22197688</a>)</p><h2 id="遇到小问题"><a href="#遇到小问题" class="headerlink" title="遇到小问题"></a>遇到小问题</h2><h3 id="hexo-d后-出现错误ERROR-Deployer-not-found-git"><a href="#hexo-d后-出现错误ERROR-Deployer-not-found-git" class="headerlink" title="hexo d后 出现错误ERROR Deployer not found: git"></a>hexo d后 出现错误ERROR Deployer not found: git</h3><p>输出下面代码即可</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure><h3 id="写-config-yml时注意"><a href="#写-config-yml时注意" class="headerlink" title="写_config.yml时注意"></a>写_config.yml时注意</h3><p>冒号: 后一定要带空格</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy: </span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: https://github.com/HongTian1/hongtian1.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure><h3 id="下载主题碰到的问题"><a href="#下载主题碰到的问题" class="headerlink" title="下载主题碰到的问题"></a><a href="https://hexo.io/themes/index.html">下载主题</a>碰到的问题</h3><p>下载主题后<br>出现错误 Hexo启动页面显示extends includes/layout.pug block content include includes/recent-posts.pug include</p><p>解决方案<br>按顺序执行命令</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ npm install --save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive</span><br><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;参考知乎&lt;br&gt;链接(&lt;a href=&quot;https://www.zhihu.com/question/22197688&quot;&gt;https://www.zhihu.com/question/22197688&lt;/a&gt;)&lt;/p&gt;
-&lt;h2 id=&quot;遇到小问题&quot;&gt;&lt;a href=&quot;#遇到</summary>
       
     
     
